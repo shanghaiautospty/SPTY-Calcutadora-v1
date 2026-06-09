@@ -37,6 +37,29 @@ migrate_working_dir/
 /build/
 pubspec.lock
 
+# Exceptions to above rules.
+!/packages/flutter_tools/test/flutter_release_bundle_data/app.flx
+!/packages/flutter_tools/test/flutter_release_bundle_data/isolate_snapshot_data
+!/packages/flutter_tools/test/flutter_release_bundle_data/kernel_blob.bin
+!/packages/flutter_tools/test/flutter_release_bundle_data/vm_snapshot_data
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode2v3
+!**/ios/**/default.pbxuser
+!**/ios/**/default.perspectivev3
+!/packages/flutter_tools/test/fixtures/sksl_shader_lib/other.sksl
+!/packages/flutter_tools/test/fixtures/sksl_shader_lib/platform.android.sksl
+!/packages/flutter_tools/test/fixtures/sksl_shader_lib/platform.glsl
+!/packages/flutter_tools/test/fixtures/sksl_shader_lib/platform.ios.sksl
+!/packages/flutter_tools/test/fixtures/sksl_shader_lib/remove_precision_qualifier.glsl
+
+# Web platform
+lib/generated_plugins.dart
+
+# Windows
+windows/flutter/generated_plugins.cmake
+windows/flutter/generated_include_guard.cmake
+windows/flutter/generated_plugin_registrant.cmake
+
 # Coverage
 coverage/
 
@@ -69,6 +92,15 @@ app.*.map.json
 **/ios/**/Pods/
 **/ios/**/.symlinks/
 **/ios/**/.vagrant/
+**/ios/**/Flutter/Flutter.framework
+**/ios/**/Flutter/Flutter.podspec
+**/ios/**/Flutter/.last_build_id
+**/ios/**/Info.plist
+**/ios/**/LocalPackages
+**/ios/**/Flutter/.last_build_id
+**/ios/**/Flutter/Flutter.framework
+**/ios/**/Flutter/Flutter.podspec
+**/ios/**/Flutter/.last_build_id
 
 # macOS
 macos/Flutter/GeneratedPluginRegistrant.swift
